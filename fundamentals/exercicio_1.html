@@ -10,10 +10,23 @@
 
     <body>
 
-               <!-- Criar (em HTML) uma <div> com o id de "root" -->
-                <div id="root"></div>
-                <!-- Criar  <script type="module"> para o JavaScript -->
-               <script src="ex01.js"></script>
+               <script>               
+
+                let createDiv = document.createElement('div')
+                let createP = document.createElement('p')
+                let createP2 = document.createElement('p')
+                let text = document.createTextNode('Hello Edit')
+                let text2 = document.createTextNode('Quero por que preciso e se preciso passo a querer XD')
+
+                createDiv.setAttribute('id', 'root')
+
+                document.body.append(createDiv)
+                createDiv.append(createP)
+                createDiv.append(createP2)
+                createP.append(text)
+                createP2.append(text2)
+
+               </script>
         <!-- HTML -->
         <!-- Criar (em HTML) uma <div> com o id de "root" -->
         <!-- Criar  <script type="module"> para o JavaScript -->
