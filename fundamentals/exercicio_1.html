@@ -29,12 +29,16 @@
 
         <div id="root"></div>
             
-            <script>
-                const newDiv = document.createElement('div');
-                newDiv.classList.add('base');
-                newDiv.textContent = `Hello Edit`;
-                root.appendChild(newDiv);
-            </script>
+        <script>
+            const newDiv = document.createElement('div');
+            newDiv.classList.add('base');
+            newDiv.textContent = `Hello Edit`;
+            root.appendChild(newDiv);
+
+            const delDiv = document.getElementById("root");
+            delDiv.remove();
+
+        </script>
         
 
         
