@@ -9,10 +9,18 @@
     </head>
 
     <body>
+        <div id="root"></div>
         <!-- HTML -->
         <!-- Criar (em HTML) uma <div> com o id de "root" -->
         <!-- Criar  <script type="module"> para o JavaScript -->
-
+            <script type="module">
+                let newDiv = document.createElement('div');
+                //Create div Atributes
+                newDiv.append("Hello Edit");
+                let root = document.getElementById("root")
+                root.appendChild(newDiv);
+                document.body.appendChild(root)
+            </script>
         <!-- JavaScript -->
         <!-- Cria uma div em Javascript -->
 
