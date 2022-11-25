@@ -10,23 +10,21 @@
 	<body>
 		<!-- HTML -->
 		<!-- Criar (em HTML) uma <div> com o id de "root" -->
-		<div id="root"></div>
+		<!-- Pontos Extra -->
+		<!-- Remover div root do html -->
+		<!-- Quero 2 filhos o Hello Edit e um paragrafo a dizer porque querem 20 neste modulo -->
 		<!-- Criar  <script type="module"> para o JavaScript -->
+		<!-- Cria uma div em Javascript -->
+		<!-- A essa div adiciona o texto de "Hello Edit" e a classe de "base" -->
+		<!-- Acrescenta esta div ao elemento com o id de "root" criado -->
 		<script type="module">
-			//JavaScript
-			//Cria uma div em Javascript
+			let rootDiv = document.createElement('div');
+			rootDiv.setAttribute('id', 'root');
+			document.body.appendChild(rootDiv);
 			const newDiv = document.createElement('div');
-			//A essa div adiciona o texto de "Hello Edit" e a classe de "base"
 			newDiv.append('Hello Edit');
 			newDiv.classList.add('base');
-			//Acrescenta esta div ao elemento com o id de "root" criado
-			let rootDiv = document.getElementById('root');
-
-			     <!-- Pontos Extra -->
-			     <!-- Remover div root do html  -->
-			     <!-- Quero 2 filhos o Hello Edit e um paragrafo a dizer porque querem 20 neste modulo -->
-
-			     			rootDiv.append(newDiv);
+			rootDiv.append(newDiv);
 		</script>
 	</body>
 </html>
