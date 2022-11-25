@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio - Hello Edit</title>
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Exercicio - Hello Edit</title>
-    </head>
+  <body>
+    <!-- HTML -->
+    <!-- Criar (em HTML) uma <div> com o id de "root" -->
+    <!-- Criar  <script type="module"> para o JavaScript -->
 
-    <body>
-        <!-- HTML -->
-        <!-- Criar (em HTML) uma <div> com o id de "root" -->
-        <!-- Criar  <script type="module"> para o JavaScript -->
+    <!-- JavaScript -->
+    <!-- Cria uma div em Javascript -->
 
-        <!-- JavaScript -->
-        <!-- Cria uma div em Javascript -->
+    <!-- A essa div adiciona o texto de "Hello Edit" e a classe de "base" -->
 
-        <!-- A essa div adiciona o texto de "Hello Edit" e a classe de "base" -->
+    <!-- Acrescenta esta div ao elemento com o id de "root" criado -->
 
-        <!-- Acrescenta esta div ao elemento com o id de "root" criado -->
+    <!-- Pontos Extra -->
+    <!-- Remover div root do html  -->
+    <!-- Quero 2 filhos o Hello Edit e um paragrafo a dizer porque querem 20 neste modulo -->
 
-        <!-- Pontos Extra -->
-        <!-- Remover div root do html  -->
-        <!-- Quero 2 filhos o Hello Edit e um paragrafo a dizer porque querem 20 neste modulo -->
+    <div id="root"></div>
 
-        
+    <script>
+      const div = document.createElement("div");
+      const text = "Hello Edit";
+      div.setAttribute("class", "base");
+      div.append(text);
 
-    </body>
+      const id = document.getElementById("root");
+      id.append(div);
 
+      const div2 = document.createElement("div");
+      const text2 = "hello edit";
+      const div3 = document.createElement("div");
+      const text3 = "sou de braga e gosto";
+
+      div2.append("");
+    </script>
+  </body>
 </html>
