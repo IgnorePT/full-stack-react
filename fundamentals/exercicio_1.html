@@ -11,6 +11,7 @@
     <body>
         <!-- HTML -->
         <!-- Criar (em HTML) uma <div> com o id de "root" -->
+
         <!-- Criar  <script type="module"> para o JavaScript -->
 
         <!-- JavaScript -->
@@ -20,6 +21,32 @@
 
         <!-- Acrescenta esta div ao elemento com o id de "root" criado -->
 
+        <!-- Pontos extra -->
+        <!-- Remover div root do html -->
+        <!-- Quero 2 filhos  o Hello Edit  e um paragrafo-->
+
+
     </body>
+    <script type="module">
+        const root = document.createElement('div');
+        root.setAttribute('id', 'root');
+        document.body.append(root)
+
+
+
+        const newDiv = document.createElement('div');
+        newDiv.textContent='Hello Edit'
+        newDiv.classList.add('base')
+        root.append(newDiv)
+
+
+
+
+
+
+
+
+
+    </script>
 
 </html>
