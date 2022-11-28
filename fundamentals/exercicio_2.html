@@ -6,13 +6,14 @@
     <title>Exercicio 2 - Hello Edit React</title>
 </head>
 <body>
-    <div id="root"></div>
   
+    <div id="root"></div>
 
     <!-- https://unpkg.com/ -->
+   
     <script src="https://unpkg.com/react@18.1.0/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18.1.0/umd/react-dom.development.js"></script>
-  
+   <!-----
     <script type="module">
       const rootElement = document.getElementById('root')
   
@@ -23,7 +24,18 @@
       element.className = 'base'
       // isto é semelhante ao ReactDOM.createRoot().render()
       rootElement.append(element)
-    </script>
+      ----->
+      <script type="module">
+      const rootElement = document.getElementById('root')
+      const myElement = React.createElement(
+                'div',
+                { className: 'base' },
+                'Hello Edit'
+            );
+            const root = ReactDOM.createRoot(rootElement);
+            root.render(myElement);
+
+      </script>
   </body>
   
 </html>
