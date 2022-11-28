@@ -19,12 +19,34 @@
 
         // use that function in place of the divs below with:
         // usa essa função no lugar das div's
-        const element = (
+       /*  const element = (
             <div className="fifa">
                 <div className="mensagem">Vamos Portugal!</div>
                 <div className="mensagem">Até os comemos!</div>
             </div>
+            ) */
+
+            const rootElement = document.getElementById('root')
+
+            const giveMessage = (mensagem) =>{
+
+                return (
+                    <div className="mensagem">
+                        {mensagem}
+                    </div>
+                )
+            }
+
+            const element = (
+                <div className="fifa">
+                    {giveMessage("Vamos Portugal1!")}
+                    {giveMessage("Vamos Portugal2!")}
+                    {giveMessage("Vamos Portugal3!")}
+                </div>
             )
+
+            ReactDOM.createRoot(rootElement).render(element)
     </script>
+
   </body>
 </html>
