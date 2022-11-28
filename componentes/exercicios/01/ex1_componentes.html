@@ -39,8 +39,8 @@
           <div className="main">
             <h2>Copa do Mundo da FIFA 2022™</h2>
 
-            {props.clubs.forEach(element => {
-              <Club name={element[0]} goals={element[1]} />
+            {props.clubs.map(element => {
+              return <Club name={element[0]} goals={element[1]} />
             })}
           </div> 
         )
@@ -69,9 +69,10 @@
 
           Extra: Tenta tornar o a div dos clubes em componentes e importa-os dentro da App
         */
+        ReactDOM.createRoot(rootElement).render(<App clubs={clubs} />)
     </script>
 
-    <App clubs={clubs} />
+    
     
   </body>
 </html>
