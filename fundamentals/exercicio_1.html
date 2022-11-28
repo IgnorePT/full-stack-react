@@ -9,6 +9,28 @@
     </head>
 
     <body>
+        <div id="root"></div>
+
+        <script type="module">
+
+            let div = document.createElement('div');
+            div.innerHTML='Hello Edit'
+            div.classList.add('base');
+            document.body.append(div);
+
+            let divHtml = document.getElementById('root');
+            div.appendChild(divHtml);
+            divHtml.remove();
+
+            let greeting = 'Hello Edit';
+            div.append(greeting);
+            
+            let paragrafo = document.createElement('p');
+            paragrafo.innerHTML='loremipsum202020202020202020202020202020202';
+            div.append(paragrafo);
+
+
+        </script>
         <!-- HTML -->
         <!-- Criar (em HTML) uma <div> com o id de "root" -->
         <!-- Criar  <script type="module"> para o JavaScript -->
@@ -19,6 +41,10 @@
         <!-- A essa div adiciona o texto de "Hello Edit" e a classe de "base" -->
 
         <!-- Acrescenta esta div ao elemento com o id de "root" criado -->
+
+        <!-- Pontos Extra -->
+        <!-- Remover div root do html  -->
+        <!-- Quero 2 filhos o Hello Edit e um paragrafo a dizer porque querem 20 neste modulo -->
 
     </body>
 
