@@ -15,16 +15,32 @@
 
     <script type="text/babel">
          /* JSX */
-         // Cria uma função chamada giveMessage que retorna o JSX qque recebe como parametro a mensagem que queremos partilhar
+         // Cria uma função chamada giveMessage que retorna o JSX que recebe como parametro a mensagem que queremos partilhar
 
-        // use that function in place of the divs below with:
         // usa essa função no lugar das div's
+
+        function giveMessage (mensagem){
+            return (
+                <div>
+                    {mensagem}
+                </div>
+            )
+        }
+
         const element = (
             <div className="fifa">
-                <div className="mensagem">Vamos Portugal!</div>
-                <div className="mensagem">Até os comemos!</div>
+                {giveMessage("Golo do Ronaldo!")}
+                {giveMessage("Afinal foi do Bruno Fernandes")}
             </div>
             )
+
+
+        ReactDOM.createRoot(document.getElementById("root")).render(element);
+
+
+
+
+
     </script>
   </body>
 </html>
