@@ -6,22 +6,40 @@
     <title>Exercicio 2 - Hello Edit React</title>
 </head>
 <body>
+<<<<<<< HEAD
     <div id="root"> </div>
     <script src="https://unpkg.com/react@18.1.0/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18.1.0/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
+=======
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/react@18.1.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18.1.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
+
+>>>>>>> main
     <script type="text/babel">
         /* JSX */
         // Cria uma função chamada giveMessage que retorna o JSX que recebe como parametro a mensagem que queremos partilhar
         const giveMessage = (mensagem) => {
             return <div className="mensagens">{mensagem}</div>;
         };
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
         // use that function in place of the divs below with:
         // usa essa função no lugar das div's
         const element = (
             <div className="fifa">
+<<<<<<< HEAD
                 {giveMessage('Vamos Portugal!')};
                 {giveMessage('Até os comemos!')};
+=======
+                {giveMessage('Vamos Portugal!')}
+                {giveMessage('Até os comemos!')}
+>>>>>>> main
             </div>
         );
         ReactDOM.createRoot(document.getElementById('root')).render(element);
