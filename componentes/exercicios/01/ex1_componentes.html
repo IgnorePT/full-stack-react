@@ -6,7 +6,9 @@
     <title>Exercicio 2 - Hello Edit React</title>
 </head>
 <body>
-    <div id="root"></div>
+    <div id="root">
+
+    </div>
   
     <script src="https://unpkg.com/react@18.1.0/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18.1.0/umd/react-dom.development.js"></script>
@@ -14,6 +16,36 @@
 
 
     <script type="text/babel">
+      const rootElement = document.getElementById("root");
+
+      const clubs = [["Portugal",1],["Uruguai",0],["China",2]]
+
+      // CLUB COMPONENT
+      const Club = (props) => {
+        let clubName = props.name;
+        let clubGoals = props.goals;
+
+        return (
+          <div className="club">
+            <h3>{clubName}</h3>
+            <h5 className="golos"> {clubGoals} </h5>
+          </div>
+        )
+      }
+
+      // APP COMPONENT
+      const App = (props) => {
+        return (
+          <div className="main">
+            <h2>Copa do Mundo da FIFA 2022™</h2>
+
+            {props.clubs.forEach(element => {
+              <Club name={element[0]} goals={element[1]} />
+            })}
+          </div> 
+        )
+      }
+      
         /* 
           Cria o teu primeiro componente em React 
           Cria um componente chamado App que apresente a seguinte estrutura
@@ -38,5 +70,8 @@
           Extra: Tenta tornar o a div dos clubes em componentes e importa-os dentro da App
         */
     </script>
+
+    <App clubs={clubs} />
+    
   </body>
 </html>
