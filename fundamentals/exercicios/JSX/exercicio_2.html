@@ -14,6 +14,17 @@
 
 
     <script type="text/babel">
+
+        const giveMessage = (mensagem) =>{
+
+            return(
+                <div className='mensagem'>
+                    {mensagem}
+                </div>
+
+            )
+
+        }
          /* JSX */
          // Cria uma função chamada giveMessage que retorna o JSX qque recebe como parametro a mensagem que queremos partilhar
 
@@ -21,10 +32,12 @@
         // usa essa função no lugar das div's
         const element = (
             <div className="fifa">
-                <div className="mensagem">Vamos Portugal!</div>
-                <div className="mensagem">Até os comemos!</div>
+                {giveMessage ("Vamos Portugal") }
+                {giveMessage("Até os comemos!")}
             </div>
             )
+
+            ReactDOM.createRoot(document.querySelector('#root')).render(element);
     </script>
   </body>
 </html>
