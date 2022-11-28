@@ -15,14 +15,28 @@
 
     <script type="text/babel">
          /* JSX */
-         // Cria uma função chamada giveMessage que retorna o JSX qque recebe como parametro a mensagem que queremos partilhar
+         // Cria uma função chamada c que retorna o JSX qque recebe como parametro a mensagem que queremos partilhar
+
+        const giveMessage = (mensagem) => {
+
+            return (
+                <div className="mensagem">
+                    {mensagem}
+                </div>
+                )
+        }
 
         // use that function in place of the divs below with:
         // usa essa função no lugar das div's
        /*  const element = (
             <div className="fifa">
-                <div className="mensagem">Vamos Portugal!</div>
-                <div className="mensagem">Até os comemos!</div>
+                {giveMessage("Vamos Portugal!")}
+                {giveMessage("Até os comemos!")}
+                {giveMessage("Até os comemos!")}
+                {giveMessage("Até os comemos!")}
+                {giveMessage("Até os comemos!")}
+                {giveMessage("Até os comemos!")}
+                {giveMessage("Até os comemos!")}
             </div>
             ) */
 
