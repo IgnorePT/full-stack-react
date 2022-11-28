@@ -11,8 +11,9 @@
     <body>
         <!-- HTML -->
         <!-- Criar (em HTML) uma <div> com o id de "root" -->
+        
         <!-- Criar  <script type="module"> para o JavaScript -->
-
+        
         <!-- JavaScript -->
         <!-- Cria uma div em Javascript -->
 
@@ -24,8 +25,24 @@
         <!-- Remover div root do html  -->
         <!-- Quero 2 filhos o Hello Edit e um paragrafo a dizer porque querem 20 neste modulo -->
 
-        
+        <div id="root"></div>
 
+        <script type="module">
+            let newDiv = document.createElement("div");
+            newDiv.append("Hello Edit");
+            newDiv.classList.add("base");
+
+            document.getElementById("root").append(newDiv);
+            document.getElementById("root").remove();
+
+            let helloMessage = document.createElement("span");
+            helloMessage.innerText = "Hello Edit!";
+            let reason = document.createElement("p");
+            reason.innerText = "Quero 20 neste módulo porque mereço."
+
+            document.body.append(helloMessage);
+            document.body.append(reason);
+        </script>
     </body>
 
 </html>
