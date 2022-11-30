@@ -1,28 +1,36 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 2 - Hello Edit React</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicio 2 - Hello Edit React</title>
 </head>
+
 <body>
-    <div id="root"></div>
-  
-    <script src="https://unpkg.com/react@18.1.0/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@18.1.0/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
+  <div id="root"></div>
+
+  <script src="https://unpkg.com/react@18.1.0/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18.1.0/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
 
 
+<<<<<<< HEAD
     <script type="text/babel">
          /* JSX */
         /* Replica o exercicio 2 dos fundamentals em JSX */
-        const myElement = React.createElement(
-                'div',
-                { className: 'base' },
-                'Hello Edit'
-            );
-            const root = ReactDOM.createRoot(rootElement);
-            root.render(myElement);
     </script>
   </body>
+=======
+  <script type="text/babel">
+    /* JSX */
+    /* Replica o exercicio 2 dos fundamentals em JSX */
+
+    const newElement = <div class="base">Hello Edit</div>;
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(newElement);
+  </script>
+</body>
+
+>>>>>>> main
 </html>

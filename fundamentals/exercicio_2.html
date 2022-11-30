@@ -8,6 +8,7 @@
 <body>
   
     <div id="root"></div>
+  
 
     <!-- https://unpkg.com/ -->
    
@@ -15,7 +16,7 @@
     <script src="https://unpkg.com/react-dom@18.1.0/umd/react-dom.development.js"></script>
    <!-----
     <script type="module">
-      const rootElement = document.getElementById('root')
+      const rootElement = document.getElementById('root');
   
       // Reimplementar a solução anterior mas com recurso a React
       // Dica estas 3 linhas representam React.createElement
@@ -24,18 +25,7 @@
       element.className = 'base'
       // isto é semelhante ao ReactDOM.createRoot().render()
       rootElement.append(element)
-      ----->
-      <script type="module">
-      const rootElement = document.getElementById('root')
-      const myElement = React.createElement(
-                'div',
-                { className: 'base' },
-                'Hello Edit'
-            );
-            const root = ReactDOM.createRoot(rootElement);
-            root.render(myElement);
-
-      </script>
+    </script>
   </body>
   
 </html>
