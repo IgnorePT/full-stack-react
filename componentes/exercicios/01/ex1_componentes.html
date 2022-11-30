@@ -7,15 +7,15 @@
 </head>
 <body>
     <div id="root"></div>
-  
+
     <script src="https://unpkg.com/react@18.1.0/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18.1.0/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
 
 
     <script type="text/babel">
-        /* 
-          Cria o teu primeiro componente em React 
+        /*
+          Cria o teu primeiro componente em React
           Cria um componente chamado App que apresente a seguinte estrutura
 
           <div class="main">
@@ -32,11 +32,50 @@
                 <h5 class="golos"> 0 </h5>
               </div>
             </div>
-            
+
           </div>
 
           Extra: Tenta tornar o a div dos clubes em componentes e importa-os dentro da App
         */
+
+
+const Team = (props)=>{
+ return (
+            <div className="club">
+                <h3 > {props.name} </h3>
+                <h5 className="golos"> {props.goals}</h5>
+              </div>
+ )
+}
+
+const App = () => {
+
+    return (
+      <div className="main">
+            <h2>Copa do Mundo da FIFA 2022™ </h2>
+
+            <div className="jogo">
+
+        <Team name='Portugal' goals='2' />
+        <Team name='Uruguai' goals='0' />
+
+
+            </div>
+
+          </div>
+
+    )
+}
+
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+
+
+// Como Utilizamos
+
+
+
+
     </script>
   </body>
 </html>
