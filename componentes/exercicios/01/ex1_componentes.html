@@ -54,14 +54,15 @@
       </div>
     );
 
-    const App = (
-      <div className="main">
+    const App = () => {
+      return (<div className="main">
         <PageTitle />
-        {listItems}
+        {teamsList}
       </div>
-    )
+      )
+    }
 
-    ReactDOM.createRoot(document.getElementById('root')).render(App)
+    ReactDOM.createRoot(document.getElementById('root')).render(<App />)
   </script>
 </body>
 </html>
