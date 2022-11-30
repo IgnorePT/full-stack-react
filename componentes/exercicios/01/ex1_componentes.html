@@ -54,10 +54,20 @@
       </div>
     );
 
+    // const Club = (props) => {
+    //   return (<div className="club">
+    //     <h3>{props.team}</h3>
+    //     <h5 className="golos">{props.goals}</h5>
+    //   </div>)
+    // }
+
     const App = () => {
       return (<div className="main">
         <PageTitle />
         {teamsList}
+        {//<Club team="Portugal" goals="1" />
+          // <Club team="Uruguai" goals="0" />
+        }
       </div>
       )
     }
