@@ -6,37 +6,39 @@
     <title>Exercicio 2 - Hello Edit React</title>
 </head>
 <body>
-<<<<<<< HEAD
     <div id="root"> </div>
     <script src="https://unpkg.com/react@18.1.0/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18.1.0/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
-=======
-    <div id="root"></div>
-
-    <script src="https://unpkg.com/react@18.1.0/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@18.1.0/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
-
->>>>>>> main
     <script type="text/babel">
-        /* JSX */
-        // Cria uma função chamada giveMessage que retorna o JSX que recebe como parametro a mensagem que queremos partilhar
-        const giveMessage = (mensagem) => {
-            return <div className="mensagens">{mensagem}</div>;
-        };
-<<<<<<< HEAD
-=======
 
->>>>>>> main
+         /* JSX */
+         // Cria uma função chamada c que retorna o JSX qque recebe como parametro a mensagem que queremos partilhar
+
+        const giveMessage = (mensagem) => {
+
+            return (
+                <div className="mensagem">
+                    {mensagem}
+                </div>
+                )
+        }
+
         // use that function in place of the divs below with:
         // usa essa função no lugar das div's
         const element = (
             <div className="fifa">
-                <div className="mensagem">Vamos Portugal!</div>
-                <div className="mensagem">Até os comemos!</div>
+                {giveMessage("Vamos Portugal!")}
+                {giveMessage("Até os comemos!")}
+                {giveMessage("Até os comemos!")}
+                {giveMessage("Até os comemos!")}
+                {giveMessage("Até os comemos!")}
+                {giveMessage("Até os comemos!")}
+                {giveMessage("Até os comemos!")}
             </div>
             )
+
+            ReactDOM.createRoot(document.getElementById("root")).render(element)
     </script>
 </body>
 </html>
