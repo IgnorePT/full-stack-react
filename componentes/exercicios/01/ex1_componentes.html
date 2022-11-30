@@ -43,27 +43,25 @@
         <div className="club">{clubes}</div>;
       }
 
-      let App = () => {
-        return (
-          <div>
-            <div class="main">
-              <h2>Copa do Mundo da FIFA 2022™ </h2>
+      const App = () => {
+        <div>
+          <div class="main">
+            <h2>Copa do Mundo da FIFA 2022™ </h2>
 
-              <div class="jogo">
-                <div class="club">
-                  <h3> {club("Portugal")}</h3>
-                  <h5 class="golos"> 1 </h5>
-                </div>
+            <div class="jogo">
+              <div class="club">
+                <h3> {club("Portugal")}</h3>
+                <h5 class="golos"> 1 </h5>
+              </div>
 
-                <div class="club">
-                  <h3> {club("Uruguai")}</h3>
-                  <h5 class="golos"> 0 </h5>
-                </div>
+              <div class="club">
+                <h3> {club("Uruguai")}</h3>
+                <h5 class="golos"> 0 </h5>
               </div>
             </div>
-            ;
           </div>
-        );
+          ;
+        </div>;
 
         // root.render(<App />);
       };
