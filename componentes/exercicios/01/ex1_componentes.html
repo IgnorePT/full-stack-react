@@ -1,42 +1,67 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 2 - Hello Edit React</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicio 2 - Hello Edit React</title>
 </head>
 <body>
-    <div id="root"></div>
-  
-    <script src="https://unpkg.com/react@18.1.0/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@18.1.0/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
+  <div id="root"></div>
+
+  <script src="https://unpkg.com/react@18.1.0/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18.1.0/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
 
 
-    <script type="text/babel">
-        /* 
-          Cria o teu primeiro componente em React 
-          Cria um componente chamado App que apresente a seguinte estrutura
+  <script type="text/babel">
+    /* 
+      Cria o teu primeiro componente em React 
+      Cria um componente chamado App que apresente a seguinte estrutura
 
-          <div class="main">
-            <h2>Copa do Mundo da FIFA 2022™ </h2>
+      <div class="main">
+        <h2>Copa do Mundo da FIFA 2022™ </h2>
 
-            <div class="jogo">
-              <div class="club">
-                <h3 > Portugal </h3>
-                <h5 class="golos"> 1 </h5>
-              </div>
-
-              <div class="club">
-                <h3> Uruguai </h3>
-                <h5 class="golos"> 0 </h5>
-              </div>
-            </div>
-            
+        <div class="jogo">
+          <div class="club">
+            <h3 > Portugal </h3>
+            <h5 class="golos"> 1 </h5>
           </div>
 
-          Extra: Tenta tornar o a div dos clubes em componentes e importa-os dentro da App
-        */
-    </script>
-  </body>
+          <div class="club">
+            <h3> Uruguai </h3>
+            <h5 class="golos"> 0 </h5>
+          </div>
+        </div>
+        
+      </div>
+
+      Extra: Tenta tornar o a div dos clubes em componentes e importa-os dentro da App
+    */
+
+    const PageTitle = () => {
+      return <h2>Copa do Mundo da FIFA 2022™ </h2>
+    }
+
+    const games = [
+      { team: 'Portugal', goals: 1 },
+      { team: 'Uruguai', goals: 0 }
+    ]
+
+    const teamsList = games.map(game =>
+      <div className="club" key={game}>
+        <h3>{game.team}</h3>
+        <h5 className="golos">{game.goals}</h5>
+      </div>
+    );
+
+    const App = (
+      <div className="main">
+        <PageTitle />
+        {listItems}
+      </div>
+    )
+
+    ReactDOM.createRoot(document.getElementById('root')).render(App)
+  </script>
+</body>
 </html>
