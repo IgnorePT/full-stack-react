@@ -18,11 +18,19 @@
   
       // Reimplementar a solução anterior mas com recurso a React
       // Dica estas 3 linhas representam React.createElement
+      /*
       const element = document.createElement('div')
       element.textContent = 'Hello Edit'
       element.className = 'base'
+      */
+
+      const div = React.createElement('div',{className:"base"} ,'Hello Edit');
+
       // isto é semelhante ao ReactDOM.createRoot().render()
+      /*
       rootElement.append(element)
+      */
+      ReactDOM.createRoot(rootElement).render(div)
     </script>
   </body>
   

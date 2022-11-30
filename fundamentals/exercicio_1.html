@@ -19,6 +19,10 @@
         <!-- A essa div adiciona o texto de "Hello Edit" e a classe de "base" -->
 
         <!-- Acrescenta esta div ao elemento com o id de "root" criado -->
+
+        <!-- Pontos Extra -->
+        <!-- Remover div root do html  -->
+        <!-- Quero 2 filhos o Hello Edit e um paragrafo a dizer porque querem 20 neste modulo -->
         <div id="root">
 
         </div>
@@ -28,6 +32,12 @@
             div.append('Hello Edit');
             const root = document.getElementById('root');
             root.append(div);
+
+            root.remove();
+            document.body.append(div);
+            const paragrafo = document.createElement('p');
+            paragrafo.append('Porque sei tudo sobre react! :)');
+            document.body.append(paragrafo);
 
         </script>
     </body>
