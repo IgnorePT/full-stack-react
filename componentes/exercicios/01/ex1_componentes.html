@@ -14,7 +14,28 @@
 
 
     <script type="text/babel">
-        /* 
+
+      const App = (element) => {
+    
+        return (
+            <main>
+              <h2>Copa do Mundo da FIFA 2022</h2>
+              <div className="jogo">
+                <h3>Portugal</h3>
+                <h5>2</h5>
+              </div>
+              <div className="club">
+                <h3>Uruguai</h3>
+                <h5>0</h5>
+              </div>
+            </main>
+        )
+      }
+
+      ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+
+
+/* 
           Cria o teu primeiro componente em React 
           Cria um componente chamado App que apresente a seguinte estrutura
 
