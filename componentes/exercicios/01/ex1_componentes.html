@@ -39,25 +39,27 @@
 
       Extra: Tenta tornar o a div dos clubes em componentes e importa-os dentro da App
     */
+
+    const App = (promps) => {
+      console.log(promps);
+      return (
+      <div className="main">
+        <h2>Copa do Mundo da FIFA 2022™</h2>
+        <div className="jogo">
+          <Club team={promps.teamA} goals={promps.goalsTeamA} />
+          <Club team={promps.teamB} goals={promps.goalsTeamB} />
+        </div>
+      </div>)
+    }
+
     const Club = (club) => {
       return (
       <div className="club">
         <h3 > {club.team} </h3>
-        <h5 className="golos"> {club.goals} </h5>
+        <h5 className="goals"> {club.goals} </h5>
       </div>)
     }
 
-    const App = (promps) => {
-      console.log
-      return (
-      <div className="main">
-        <h2>Copa do Mundo da FIFA 2022™ </h2>
-        <div className="jogo">
-          <Club team={promps.teamA} goals={promps.teamA} />
-          <Club team={promps.teamB} goals={promps.teamB} />
-        </div>
-      </div>)
-    }
 
     const root = ReactDOM.createRoot(document.getElementById('root'));
     root.render(<App teamA='Portugal' goalsTeamA="2" teamB='Uruguai' goalsTeamB="0"/>);
