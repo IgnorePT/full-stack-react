@@ -38,10 +38,10 @@
           Extra: Tenta tornar o a div dos clubes em componentes e importa-os dentro da App
         */
 
-        const Club = (props2) => {
+        const Club = (props) => {
             return <div className="club">
-                  <h3> props2.club0 </h3>
-                  <h5 className="golos"> 0 </h5>
+                  <h3> {props.equipa} </h3>
+                  <h5 class="golos"> {props.golo} </h5>
                 </div>
         }
 
@@ -54,23 +54,18 @@
             /* Para renderizar o componente basta retornar o elemento JSX que queremos apresentar */
 
 
-            return <div className="main">
-              <h2>Copa do Mundo da FIFA 2022™ </h2>
+            return  <div className="main">
+                        <h2>Copa do Mundo da FIFA 2022™ </h2>
 
-              <div className="jogo">
-                <div className="club">
-                  <h3 > {props.equipa1} </h3>
-                  <h5 className="golos"> 1 </h5>
-                </div>
-                <Club club={props.club}/>
-                
-              </div>
-              
-            </div>
+                        <div className="jogo">
+                          <Club nome={props.equipa1} golo={props.golo1} />
+                          <Club nome={props.equipa2} golo={props.golo2} />
+                        </div>
+                    </div>
         }
 
         const  root = document.getElementById('root');
-        ReactDOM.createRoot(root).render(<App equipa1="portugal" title1="title"/>);
+        ReactDOM.createRoot(root).render(<App equipa1="portugal" golo1="1" equipa2="uruguai" golo2="0"/>);
     </script>
   </body>
 </html>
