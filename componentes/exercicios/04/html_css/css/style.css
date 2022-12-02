@@ -116,13 +116,13 @@ body {
     font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 500;
-    top: 50%
-    transform
+    top: 50%;
+    transform: uppercase;
     margin-top: 1.6rem;
     margin-bottom: 3.2rem;
     transition: all 0.4s;
     cursor: pointer;
-    
+
 }
 
 .product-card .card-footer .btn-buy:hover{
@@ -148,6 +148,3 @@ body {
     75% { transform: rotate(-10deg)}
     100% { transform: rotate(0deg)}
 } */
-    
-
-
