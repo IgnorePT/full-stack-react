@@ -44,7 +44,7 @@
       }
 
       const App = () => {
-        <div>
+        return (
           <div class="main">
             <h2>Copa do Mundo da FIFA 2022™ </h2>
 
@@ -60,14 +60,10 @@
               </div>
             </div>
           </div>
-          ;
-        </div>;
-
-        // root.render(<App />);
+        );
       };
 
-      const root = ReactDOM.creatRoot(document.getElementById("root"));
-      root.render(<App />);
+      ReactDOM.creatRoot(document.getElementById("root")).render(<App />);
 
       // const root = ReactDOM.createRoot(rootElement);
       // root.render(<App />);
