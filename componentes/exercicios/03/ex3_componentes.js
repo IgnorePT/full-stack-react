@@ -1,23 +1,38 @@
-  /* 
-          Cria o teu primeiro componente em React 
-          Cria o teu primeiro componente em React dentro da tua aplicação com recurso a Toolchain
+/**
+ * Conditional Rendering
+ * 
+ * Exercicio 1:  Utiliza o operador Ternario (? :) para colocar o ❌ 
+ * caso a tarefa nao esteja completa
+ * 
+ * 
+ */
 
-          <div class="main">
-            <h2>Copa do Mundo da FIFA 2022™ </h2>
-
-            <div class="jogo">
-              <div class="club">
-                <h3 > Portugal </h3>
-                <h5 class="golos"> 1 </h5>
-              </div>
-
-              <div class="club">
-                <h3> Uruguai </h3>
-                <h5 class="golos"> 0 </h5>
-              </div>
-            </div>
-            
-          </div>
-
-          Extra: Tenta tornar o a div dos clubes em componentes e importa-os dentro da App
-        */
+ function TodoItem({ name, isComplete }) {
+    return (
+      <li className="todo-item">
+        {name} {isComplete && '✔'}
+      </li>
+    );
+  }
+  
+  export default function TodoList() {
+    return (
+      <section>
+        <h1>Todo List</h1>
+        <ul>
+          <TodoItem 
+            isComplete={true} 
+            name="Comprar Roupa" 
+          />
+          <TodoItem 
+            isComplete={true} 
+            name="Lavar a louça" 
+          />
+          <TodoItem 
+            isComplete={false} 
+            name="Programar" 
+          />
+        </ul>
+      </section>
+    );
+  }
