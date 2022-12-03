@@ -418,6 +418,43 @@ const ListaCandidatos = () => {
 }
 ```
 
+[Exemplo em CodeSandbox](https://codesandbox.io/s/react-playground-forked-4wte0f?file=/index.js)
+
+### Filtrar Array's
+
+Vamos ver como filtrar elementos de arrays para mais tarde serem apresentados na listagem.
+Vamos reutilizar o mesmo objeto mas desta vez queremos filtrar candidatos que so programem em "Javascript".
+
+Para conseguirmos fazer isto vamos utilizar a metodo `filter()` dos arrays de JS.
+
+[Array.Filter() MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+
+
+```JSX
+  const candidatos = [
+    { id: 0, nome: "Jõao", linguagem: "JAVA"},
+    { id: 1, nome: "Mario José", linguagem: "C#"},
+    { id: 2,  nome: "C. Ronaldo", linguagem: "Linic"},
+    { id: 3, nome: "Maia", linguagem: "Javascript" },
+    { id: 4, nome: "Chico", linguagem: "Cobol"}
+  ]
+
+
+const programadoresJS = candidatos.filter(candidato => candidato.linguagem === "Javascript")
+
+const listaCandidatos = programadoresJS.map(candidato => {
+    return (
+      <li key={candidato.id}>
+        {candidato.nome} {candidato.linguagem}
+      </li>)
+  })
+```
+
+[Exemplo CodeSandbox](https://codesandbox.io/s/upbeat-star-7mf2i2?file=/src/App.js)
+
+
+
+
 
 
 
