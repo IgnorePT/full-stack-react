@@ -49,3 +49,12 @@ const favListObject = [{
  * </div>
  */
 
+/**
+ * Dicas:
+ *  - Podes criar uma aplicação num projeto novo com recursos Vite ou CRA
+ *  - Podes criar a const favListObject no ficheiro App.jsx (vite) | App.js (cra)
+ *  - Para passares o variavel cria uma chave e passa o faviListObject 
+ *    Passar para filho: <Componente favList={*variavel*} />
+ *    Usar no componente: const Componente = (props) => {...} 
+ */
+
