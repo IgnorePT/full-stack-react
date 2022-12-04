@@ -228,7 +228,7 @@ function Item({name, onDelivery }) {
 
     return ( 
         <li className="item">
-            {name} {onDelivery &&  | "Em entrega"} 
+            {name} {onDelivery &&  "| Em entrega"} 
         </li>
         )
     }
