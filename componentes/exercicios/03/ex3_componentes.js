@@ -10,7 +10,7 @@
  function TodoItem({ name, isComplete }) {
     return (
       <li className="todo-item">
-        {name} {isComplete && '✔'}
+        {name} {isComplete ? '✔' : '❌'}
       </li>
     );
   }
