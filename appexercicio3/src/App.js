@@ -1,13 +1,6 @@
-/**
- * Conditional Rendering
- * 
- * Exercicio 1:  Utiliza o operador Ternario (? :) para colocar o ❌ 
- * caso a tarefa nao esteja completa
- * 
- * 
- */
+import './App.css';
 
- function TodoItem({ name, taskStatus }) {
+function TodoItem({ name, taskStatus }) {
   let mark = ' ';
   const isComplete = `${taskStatus} ${mark}`;
 
