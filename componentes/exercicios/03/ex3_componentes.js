@@ -3,14 +3,14 @@
  * 
  * Exercicio 1:  Utiliza o operador Ternario (? :) para colocar o ❌ 
  * caso a tarefa nao esteja completa
- * 
+ *  feito na aplicação qualquer-coisa
  * 
  */
 
  function TodoItem({ name, isComplete }) {
     return (
       <li className="todo-item">
-        {name} {isComplete && '✔'}
+        {name} {/*isComplete && '✔'*/ isComplete ? '✔': '❌'}
       </li>
     );
   }

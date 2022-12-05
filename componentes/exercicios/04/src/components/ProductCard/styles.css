@@ -1,0 +1,126 @@
+
+/* Main Card */
+.product-card {
+	position: relative;
+	width: 500px;
+	min-height: 800px;
+	margin: 40px auto;
+	border-radius: 16px;
+	background: linear-gradient(240deg, #e6b541, #ea3524);
+	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    animation: cris-animation 10s ease-in-out 200ms infinite;
+}
+
+.product-card > * {
+	padding: 1.2rem 1.6rem;
+}
+
+.product-card .card-header {
+	margin-bottom: 6.0rem;
+}
+
+/* Card Body */
+.product-card .card-body {
+	position: absolute;
+	height: 80%;
+	clear: both;
+    overflow: hidden;
+}
+
+/* Card Body - Header */
+.product-card .card-header .brand img {
+	float: left;
+    max-height: 2.5rem;
+}
+
+.product-card .card-header .price {
+	font-size: 2.4rem;
+	font-weight: 400;
+	color: #fff;
+	float: right;
+}
+
+
+/* Card Body - Main Content */
+.product-card .card-body .main-content h2.title{
+    font-size: 3.2rem;
+    font-weight: 500;
+    margin-bottom: 4.0rem;
+}
+
+.product-card .card-body .main-content .description{
+    font-size: 1.8rem;
+    line-height: 150%;
+    margin-bottom: 6.0rem;
+}
+
+.product-card .card-body .text-effect {
+    position: absolute;
+    font-size: 28.0rem;
+    opacity: 0.5;
+    font-weight: 600;
+    letter-spacing: 3rem;
+    left: -2rem;
+    right: 0;
+    bottom: 4rem;
+    z-index: 0;
+    text-transform: uppercase;
+}
+
+
+.product-card .featured-image{
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    bottom: 2rem;
+    width: 112%;
+    pointer-events: none;
+}
+
+/* Card Footer */
+.product-card .card-footer {
+	position: absolute;
+	bottom: 0;
+	background-color: #fff;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    border-radius: 0 0px 16px 16px;
+    text-align: center;
+    height: 20%;
+}
+
+
+.product-card .card-footer .btn-buy{
+    padding: 1.6rem 6.2rem;
+    color: #3e19d1;
+    border: 2px solid #3e19d1;
+    background-color: transparent;
+    border-radius: 50px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    top: 50%;
+    margin-top: 1.6rem;
+    margin-bottom: 3.2rem;
+    transition: all 0.4s;
+    cursor: pointer;
+    
+}
+
+.product-card .card-footer .btn-buy:hover{
+    color: #fff;
+    background-color: #3e19d1;
+}
+
+.product-card .card-footer .product-category{
+    display: block;
+    font-size: 1.4rem;
+    bottom: 1.2rem;
+    width: 100%;
+    color: #B3B3B3;
+    text-transform: uppercase;
+    letter-spacing: 0.8rem;
+    font-weight: 300;
+}
