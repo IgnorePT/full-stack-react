@@ -60,8 +60,8 @@ export default App;
  * <div class="spotify-card-list">
  *  <div class="music-card">
  *      <img src="" />
- *      <h3 class="title">*nome musica*</div>
- *      <h5 class="artist">*nome do artista</div>
+ *      <h3 class="title">*nome musica*</h3>
+ *      <h5 class="artist">*nome do artista</h5>
  *  </div>
  * *  <div class="music-card">
  *      <img src="" />
