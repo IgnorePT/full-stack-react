@@ -10,7 +10,7 @@
  * Cria uma lista de cards com Titulo, Artista, Imagem
  */
 
-const favList = ["musica 1", "musica 2"];
+// const favList = ["musica 1", "musica 2"];
 
 // HTML esperado
 /**
@@ -23,14 +23,37 @@ const favList = ["musica 1", "musica 2"];
  * </div>
  */
 
+const SpotifyList = (musicList) => {
+
+    return (
+        <div class="spotify-fav">
+            <ul class="music-list">
+                {musicList.map((music) => (
+                    <li class="music">{music}</li>
+                ))}
+
+            </ul>
+        </div>
+
+    )
+}
+
+function App() {
+    const favList = ["musica 1", "musica 2"];
+    return <SpotifyList musicList={favList}></SpotifyList>
+
+}
+
+export default App;
+
 
 //Ex 02
 // Estrutura do Array
-const favListObject = [{
-    idMusica: 0,
-    nome: "",
-    artista: ""
-}];
+// const favListObject = [{
+//     idMusica: 0,
+//     nome: "",
+//     artista: ""
+// }];
 
 // HTML esperado
 /**
