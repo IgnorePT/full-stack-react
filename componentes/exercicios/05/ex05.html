@@ -1,0 +1,120 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 5</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/react@18.1.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18.1.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
+    <script type="text/babel">
+      /**
+       * Spotify Fav
+       *
+       * Ex 01:
+       * Cria uma aplicação que receba um array das tuas musicas favoritas
+       * e as as aplique numa lista segue a lista em exemplo
+
+       function App() { //Spotify Component
+        const favList = ["Juliet", "Hentai", "Volver", "Andria"];
+        
+        return (
+          <div className="spotify-fav">
+            <ul className="music-list">
+              <li className="music">{favList[0]}</li>
+              <li className="music">{favList[1]}</li>
+              <li className="music">{favList[2]}</li>
+              <li className="music">{favList[3]}</li>
+            </ul>
+          </div>
+        );
+      }
+        Resolução Aula:
+
+        const SpotifyList = (props) => {
+        console.log(props.title);
+        //ou
+        const {title , musicList} = props;
+        console.log(title);
+        return (
+            <div className="spotify-fav">
+                <h3>{title}</h3>
+                <ul className="music-list">
+                    {musicList.map((music, index) => {
+                    const id= uuidv4()
+                    return(
+                    <li key={id} className="music">{music}</li> )})}
+                </ul>
+            </div>
+        )
+    }
+        //Para as keys unicas nas li, instalar package uuid, código já escrito
+        function App() {
+            const favList = ["musica 1", "musica 2", "musica 3", "musica 4"];
+            return <SpotifyList title="Coisa" musicList= {favList}></SpotifyList>;
+        }
+            export default App; (edited) 
+
+            {musiclList.map(() => return  <li className="music">{favList}</li>)} //Arrow function tem return automático
+
+       * Ex 02:
+       * Cria a mesma aplicação com recursoa um array de objetos
+       * Cria uma lista de cards com Titulo, Artista, Imagem
+       */
+
+      function App(number, title, artist, img) {
+        const cards = [
+          {
+            id: 1,
+            title: "abc",
+            artist: "abc",
+            img: "abc",
+          },
+
+          {
+            id: 2,
+            title: "abc",
+            artist: "abc",
+            img: "abc",
+          },
+
+          {
+            id: 3,
+            title: "abc",
+            artist: "abc",
+            img: "abc",
+          },
+
+          {
+            id: 4,
+            title: "abc",
+            artist: "abc",
+            img: "abc",
+          },
+        ];
+
+        //console.log(cards);
+
+        const playlist = cards.map((cards, index) => {
+          return (
+            <div className="spotify-fav">
+              <ul className="music-list">
+                <li className="music">{playlist}</li>
+              </ul>
+            </div>
+          );
+        });
+      }
+
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(<App />);
+
+      
+    </script>
+  </body>
+</html>
