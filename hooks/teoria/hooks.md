@@ -6,6 +6,7 @@ Apartir da versão 16.8 do React foi introduzido a possibilidade de utilizarmos 
 
 Os Hooks não são nada mais e nada menos do que funções de Javascript onde podemos isolar a parte reutilizavel de um componente funcional. 
 
+
 ## Fundamentos dos Hooks
 
 Mas antes de pensarnos antes de pensarmos em Hooks vamos pensar em que são funções Javascript e como funcionam.

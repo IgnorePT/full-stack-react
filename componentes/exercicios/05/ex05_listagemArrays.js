@@ -10,7 +10,27 @@
  * Cria uma lista de cards com Titulo, Artista, Imagem
  */
 
-const favList = ["musica 1", "musica 2"];
+const SpotifyList = ({ title, musicList }) => {
+    return (
+        <div className="spotify-fav">
+            <h3>{title}</h3>
+            <ul className="music-list">
+                {musicList.map((music) => (
+                <li className="music">{music}</li>
+                ))}
+            </ul>
+        </div >
+    );
+};
+
+function App() {
+    const favList = ["musica 1", "musica 2", "musica 3", "musica 4"];
+
+    return <SpotifyList title="Coisa" musicList={favList}></SpotifyList>;
+}
+
+export default App;
+
 
 // HTML esperado
 /**
@@ -24,6 +44,8 @@ const favList = ["musica 1", "musica 2"];
  */
 
 
+
+
 //Ex 02
 // Estrutura do Array
 const favListObject = [{
@@ -31,6 +53,8 @@ const favListObject = [{
     nome: "",
     artista: ""
 }];
+
+/*
 
 // HTML esperado
 /**
@@ -49,7 +73,7 @@ const favListObject = [{
  * </div>
  */
 
-/**
+/*
  * Dicas:
  *  - Podes criar uma aplicação num projeto novo com recursos Vite ou CRA
  *  - Podes criar a const favListObject no ficheiro App.jsx (vite) | App.js (cra)
@@ -57,4 +81,3 @@ const favListObject = [{
  *    Passar para filho: <Componente favList={*variavel*} />
  *    Usar no componente: const Componente = (props) => {...} 
  */
-
