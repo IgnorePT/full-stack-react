@@ -104,7 +104,7 @@ São funções que retornam sempre o mesmo output para o mesmo input ou seja nã
 import React, {useState} from React
 
 //Estrutura do useState
-const [state, setState] = useState(estadoInicial);
+const [state, setState] = useState(estadoInicial); (state é o nome daquilo que quero, e depois da virgula é a função, que começa com set e o nome do que quero!)
 ```
 
 O useState retorna um valor de estado e uma função para atualizar o mesmo.  
