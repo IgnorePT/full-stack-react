@@ -1,9 +1,6 @@
 import "./App.css";
 
 
-
-
-
 /**
  * Spotify Fav
  * 
@@ -28,15 +25,15 @@ import "./App.css";
   * </div>
   */
  
-const SpotifyList = (props) => {
+const SpotifyList = ({ title, musicList }) => {
 
-    const { title, musicList } = props
-    
     return (
         <div className="spotify-fav">
+            <h3>{title}</h3>
             <ul className="music-list">
-                <li className="music">*nome-musica*</li>
-                <li className="music">*nome-musica*</li>
+                {musicList.map((music) => (
+                    <li className="music">{music}</li>
+                ))}
             </ul>
         </div>
     )
@@ -45,8 +42,10 @@ const SpotifyList = (props) => {
 function App() {
     const favList = ["musica 1", "musica 2", "musica 3", "musica 4"];
 
-    return <SpotifyList title="titulo" musicList={favList}></SpotifyList>
+    return <SpotifyList title="Coisa" musicList={favList}></SpotifyList>
 }
+
+export default App;
 
  //Ex 02
  // Estrutura do Array
