@@ -20,21 +20,31 @@
     // Cria o teu primeiro componente em React 
     // Cria um componente chamado App que apresente a seguinte estrutura
 
+    const Results = (props) =>{
+      return(
+        <div className='club'> 
+          <h3>
+            {props.name}
+          </h3>
+          <h5>
+            {props.gol}
+          </h5>
+        </div>
+      )
+    }
+
     const App = () => {
       return (
-        <div class="main">
+        <div className="main">
           <h2>Copa do Mundo da FIFA 2022™ </h2>
 
-          <div class="jogo">
-            <div class="club">
-              <h3 > Portugal </h3>
-              <h5 class="golos"> 2 </h5>
-            </div>
+          <div className="jogo">
+            <Results name='Portugal' gol='8'/>
 
-            <div class="club">
-              <h3> Uruguai </h3>
-              <h5 class="golos"> 0 </h5>
-            </div>
+            <Results name='Uruguai' gol='7' />
+
+            <Results name='Brasil' gol='10' />
+
           </div>
 
         </div>
