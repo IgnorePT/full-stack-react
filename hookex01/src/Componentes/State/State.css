@@ -1,0 +1,26 @@
+
+.container{
+    width: 500px;
+    height: 500px;
+    margin:100px auto;
+    border: 10px solid black;
+}
+
+.container button{
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: blue;
+    color: #fff;
+    font-weight: 500;
+    margin: 40% 10px;
+    
+}
+
+.container button:hover{
+    background-color: red;
+}
+
+.container .btn-reset{
+    background-color: red;
+}
