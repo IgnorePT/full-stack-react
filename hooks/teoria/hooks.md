@@ -105,7 +105,7 @@ São funções que retornam sempre o mesmo output para o mesmo input ou seja nã
 
 ```JSX 
 //Importação do useState
-import React, {useState} from React
+import React, {useState} from 'react'
 
 //Estrutura do useState
 const [state, setState] = useState(estadoInicial);
