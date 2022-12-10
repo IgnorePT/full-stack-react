@@ -1,0 +1,42 @@
+.counter_value {
+  display: block;
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 0.5rem;
+  background-color: #202124;
+  width: fit-content;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+}
+
+.btn  {
+  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  background-color: transparent;
+  color: white;
+  border-radius: 8px;
+  border: 1px solid white;
+}
+
+.btn:hover {
+  color: #202124;
+  background-color: white;
+  cursor: pointer;
+}
+
+
+.btn_container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn--reset {
+  display: block;
+  width: 100%;
+}
