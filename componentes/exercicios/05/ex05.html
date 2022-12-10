@@ -18,9 +18,9 @@
        *
        * Ex 01:
        * Cria uma aplicação que receba um array das tuas musicas favoritas
-       * e as as aplique numa lista segue a lista em exemplo
+       * e as as aplique numa lista segue a lista em exemplo*/
 
-       function App() { //Spotify Component
+       function App() { 
         const favList = ["Juliet", "Hentai", "Volver", "Andria"];
         
         return (
@@ -34,69 +34,71 @@
           </div>
         );
       }
-        Resolução Aula:
+        
+        const playlist = (props) => {
 
-        const SpotifyList = (props) => {
-        console.log(props.title);
+        //Apontamentos aula:
+        //console.log(props.title);
         //ou
-        const {title , musicList} = props;
-        console.log(title);
+        //const {title , musicList} = props;
+        //console.log(title);
         return (
             <div className="spotify-fav">
-                <h3>{title}</h3>
+                <h1>{title}</h1>
                 <ul className="music-list">
                     {musicList.map((music, index) => {
-                    const id= uuidv4()
+                    //const id = uuidv4() - ID para as keys unicas
                     return(
                     <li key={id} className="music">{music}</li> )})}
                 </ul>
             </div>
         )
     }
-        //Para as keys unicas nas li, instalar package uuid, código já escrito
-        function App() {
-            const favList = ["musica 1", "musica 2", "musica 3", "musica 4"];
-            return <SpotifyList title="Coisa" musicList= {favList}></SpotifyList>;
-        }
-            export default App; (edited) 
 
-            {musiclList.map(() => return  <li className="music">{favList}</li>)} //Arrow function tem return automático
+  
 
+     
+        
+      /*
        * Ex 02:
        * Cria a mesma aplicação com recursoa um array de objetos
        * Cria uma lista de cards com Titulo, Artista, Imagem
-       */
+      */
+       
+      
 
       function App(number, title, artist, img) {
         const cards = [
           {
             id: 1,
-            title: "abc",
-            artist: "abc",
-            img: "abc",
+            title: "Juliet",
+            artist: "Dire Straits",
+            img: "x",
           },
 
           {
             id: 2,
-            title: "abc",
-            artist: "abc",
-            img: "abc",
+            title: "Hentai",
+            artist: "Rosália",
+            img: "x",
           },
 
           {
             id: 3,
-            title: "abc",
-            artist: "abc",
-            img: "abc",
+            title: "Volver",
+            artist: "Rosália",
+            img: "x",
           },
 
           {
             id: 4,
-            title: "abc",
-            artist: "abc",
-            img: "abc",
+            title: "Andria",
+            artist: "La Dispute",
+            img: "x",
           },
         ];
+
+        return <App title="Playlist" playlist={cards}></App>;
 
         //console.log(cards);
 
@@ -113,7 +115,6 @@
 
       const root = ReactDOM.createRoot(document.getElementById("root"));
       root.render(<App />);
-
       
     </script>
   </body>
