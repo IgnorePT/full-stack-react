@@ -14,6 +14,40 @@
 
 
     <script type="text/babel">
+
+      const rootElement = document.getElementById('root')
+
+      function App () {
+        return(
+        <div class="main">
+            <h2>Copa do Mundo da FIFA 2022™ </h2>
+
+            <Clube name="Portugal" goals="1" />
+
+            <Clube2 name="Uruguai" goals="0" />
+
+          </div>
+        )
+      }
+
+      function Clube (props) {
+              <div className="jogo">
+              <div className="club">
+                <h3 > Portugal </h3>
+                <h5 className="golos"> 1 </h5>
+              </div>
+              </div>
+      }
+
+
+      function Clube2 (props) {
+            <div className="club">
+                <h3> Uruguai </h3>
+                <h5 className="golos"> 0 </h5>
+              </div>
+            }
+      
+    
         /* 
           Cria o teu primeiro componente em React 
           Cria um componente chamado App que apresente a seguinte estrutura
@@ -37,6 +71,8 @@
 
           Extra: Tenta tornar o a div dos clubes em componentes e importa-os dentro da App
         */
+
+
     </script>
   </body>
 </html>
