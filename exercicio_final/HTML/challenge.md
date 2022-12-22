@@ -48,3 +48,6 @@ Documentação disponivel em: https://foxcoding.net/docs/
 ## Pontos extra
 
 Em analise...
+
+## Entrega
+O projeto deve ser entregue individualmente num repositorio GIT. Devem enviar-me o link para esse repositorio. Até: Data a anunciar
