@@ -1,0 +1,38 @@
+.header {
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 25px 200px;
+}
+
+.left_navigation {
+    display: inline-flex;
+    justify-content: baseline;
+    gap: 20px;
+}
+
+.right_navigation{
+    display: inline-flex;
+    float: right;
+}
+
+.navigation_link{
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.navigation_link:hover {
+    cursor: pointer;
+}
+
+.navigation_link a{
+    margin-right: 5px;
+    color: black;
+    
+}
+
+.link_arrow {
+    height: 5px;
+}
