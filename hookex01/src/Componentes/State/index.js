@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+
+import React, { useState } from 'react'; /* importa o hook*/
 import './State.css'
 
 const Components = () => {
-    const [counter, setCounter] = useState(0);
+
+    //Definir estado
+    const [counter, setCounter] = useState(0); /* counter vai receber o valor atribuido ao useState */
     const reset = 0;
     return (
         <div className='container'>
