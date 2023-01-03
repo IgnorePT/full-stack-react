@@ -10,3 +10,10 @@
  * - Podem usar https://codesandbox.io/
  */
 
+const Componente = () => {
+
+    return <div onClick={() => {
+    }}
+
+    //onChange, onInput
+}
