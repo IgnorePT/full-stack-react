@@ -213,8 +213,8 @@ template {
 
 @font-face {
   font-family: "editstore";
-  src: url("../fonts/editstore.eot?rqwo5a");
-  src: url("../fonts/editstore.eot?rqwo5a#iefix") format("embedded-opentype"), url("../fonts/editstore.ttf?rqwo5a") format("truetype"), url("../fonts/editstore.woff?rqwo5a") format("woff"), url("../fonts/editstore.svg?rqwo5a#editstore") format("svg");
+  src: url("fonts/editstore.eot?rqwo5a");
+  src: url("fonts/editstore.eot?rqwo5a#iefix") format("embedded-opentype"), url("fonts/editstore.ttf?rqwo5a") format("truetype"), url("fonts/editstore.woff?rqwo5a") format("woff"), url("fonts/editstore.svg?rqwo5a#editstore") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
