@@ -73,6 +73,27 @@ npm start || yarn start
 npm run dev || yarn dev
 ```
 
+## Tipagem em Typescript
+
+### Tipagem de variáveis
+Para tipar uma variável em TypeScript, devemos especificar o tipo da variável quando adeclarámos. Aqui está um exemplo de como podemos fazer isso:
+
+```TS
+// Estrutura
+// Iniciar variável : tipo = valor
+let message: string = 'Hello, world!';
+const PI: number = 3.14;
+
+message = 'Hello, TypeScript!';
+PI = 3.15; // Erro: não é possível atribuir um novo valor a uma constante
+
+```
+
+Neste exemplo, temos duas variáveis: ``message`` e ``PI``. A variável message é do tipo ``string`` e a variável PI é do tipo ``number``. Isto significa que message só pode armazenar valores do tipo string e PI só pode armazenar valores do tipo number.
+
+Testem esta funcionalidade e habituem-se a ver as e interpretar as messagens de erros que surjam.
+
+
 ## Outros beneficios para alem da tipagem
 Além da segurança de tipagem, o TypeScript também oferece outras funcionalidades que podem ser úteis em projetos React. Alguns exemplos incluem:
 
