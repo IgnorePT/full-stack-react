@@ -159,19 +159,23 @@ const ExemploFormulario = () => {
     handleSubmit = (event) => {
         event.preventDefault();
         // Variavel que irá armazenar os erros do nosso formulario.
-        const errors = {};
+        const currentErrors = {};
         //Efetuar validações manuais:
 
         if(!isValidEmail(email)){
-            errors.email = 'Email inválido';
+            currentErrors.email = 'Email inválido';
+        }
+
+        if(name.length < 3){
+             currentErrors.name = 'Nome inválido';
         }
 
         // Validar se não existam erros:
-        if (Object.keys(errors).length === 0) {
+        if (Object.keys(currentErrors).length === 0) {
             // - Enviar os dados do formulário para o servidor
             // - Fetch ou Axios metodo POST || PUT
         } else {
-            setErrors({errors})
+            setErrors(currentErrors)
         }
        
     }
